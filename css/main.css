@@ -1,0 +1,253 @@
+body {
+   text-align: center;
+   margin: 0px auto;
+}
+
+/*Background Cover*/
+
+html {
+   height: 100%;
+}
+
+.first {
+ background-image: url("../img/island.png");
+ /*change transparency*/
+ margin-top: -20px;
+ background-position: center;
+ background-repeat: no-repeat; 
+ height: 70vh;
+ padding: 3em;
+}
+
+.second {
+ background-image: url("../img/island.png");
+ /*change transparency*/
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat; 
+}
+
+.contact {
+  background-image: url("http://uncommoncarib.wpengine.netdna-cdn.com/wp-content/uploads/2010/12/White-sand-beach.jpg");
+ /*change transparency*/
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat; 
+}
+
+/*Navbar*/
+
+.navbar {
+   margin-bottom: 20px;
+}
+
+.navbar-brand > img {
+ display: block;
+ height: 40px;
+ width: 40px;
+}
+
+.navbar-brand.title {
+   font-family: 'Modak', cursive;
+   color: black;
+   font-size: 30px;
+   margin-top: 12px;
+}
+
+
+@media (max-width: 320px) {
+   .navbar-brand.title {
+      position: relative;
+      right: 10px;
+      bottom: 59px;
+   }
+}
+
+@media (max-width: 384px) {
+   .navbar-brand.title {
+      position: relative;
+      right: 10px;
+      bottom: 59px;
+   }
+}
+
+@media (max-width: 470px) {
+   .navbar-brand.title {
+      position: relative;
+      bottom: 8px;
+      right: 12px;
+      width: 55%;
+   }
+}
+
+.navbar.color {
+   background-color: #FBF6A8;
+}
+
+.navbar .navbar-toggle {
+   margin-top: 17px;
+}
+
+.navbar .navbar-toggle .icon-bar.hamburger {
+    background-color: black;
+}
+
+.hamburger-font {
+   margin-top: 12px;
+   color: black;
+   font-family: 'Modak', cursive;
+   font-size: 20px;
+}
+
+@media (max-width: 990px) {
+   .hamburger-font {
+      font-size: 19px;
+   }
+}
+
+/*Navbar End*/
+
+/*Home Page*/
+
+.border {
+  border: 1px solid white;
+}
+
+/*Footer*/
+
+.container-fluid .footer {
+   height: 70px;
+   background-color: #FBF6A8;
+}
+
+.fa {
+   color: white;
+   margin: 0px 5px;
+   padding: 5px;
+   border-radius: 25%;
+}
+
+.fa.fa-twitter {
+   background-color: #36A8EE;
+   font-size: 30px;
+}
+
+.twitter {
+   color: #36A8EE;
+}
+
+.fa.fa-facebook {
+   background-color: #2445A6;
+   padding: 5px;
+   font-size: 30px;
+}
+
+.facebook {
+   color: #2445A6;
+}
+
+.fa.fa-yelp {
+   background-color: #D32323;
+   font-size: 30px;
+}
+
+.yelp {
+  color: #D32323;
+}
+
+.socialMedia {
+   font-family: 'Modak', cursive;
+   font-size: 20px;
+}
+
+@media (max-width: 539px) {
+   .socialMedia {
+      font-size: 12px;
+      
+   }
+}
+
+@media (max-width: 539px) {
+   .fa.fa-twitter,
+   .fa.fa-facebook,
+   .fa.fa-yelp {
+    font-size: 12px;    
+   }
+}
+
+@media (max-width: 347px) {
+   .socialMedia {
+      font-size: 10px;
+      
+   }
+}
+
+@media (max-width: 347px) {
+   .fa.fa-twitter,
+   .fa.fa-facebook,
+   .fa.fa-yelp {
+    font-size: 10px;    
+   }
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #FBF6A8;
+  text-align: center;
+}
+
+.address,
+.phone {
+   font-family: 'Roboto Slab', serif;
+   font-size: 12px;
+   font-weight: bold;
+}
+
+/*Footer End*/
+
+/*Home Page*/
+
+.name {
+   font-family: 'Modak', cursive;
+   font-size: 40px;
+   color: black;
+}
+
+
+@media (max-width: 464px) {
+   .name {
+    font-size: 25px;    
+   }
+}
+
+.nameTwo {
+   font-family: 'Roboto Slab', serif;
+   font-size: 20px;
+   letter-spacing: 2px;
+   color: black;
+}
+
+@media (max-width: 588px) {
+   .nameTwo {
+    font-size: 20px;    
+ }
+
+ @media (max-width: 464px) {
+   .nameTwo {
+    font-size: 10px;    
+ }
+
+@media (max-width: 1300px) {
+   .logo {
+    height: 50%; 
+    width: 50%;  
+ }
+
+ @media (max-width: 464px) {
+   .logo {
+    height: 50%; 
+    width: 50%;  
+ }
