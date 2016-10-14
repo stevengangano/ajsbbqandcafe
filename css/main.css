@@ -9,35 +9,12 @@ html {
    height: 100%;
 }
 
-.first {
- background-image: url("../img/island.png");
- margin-top: -20px;
- background-position: center;
- background-repeat: no-repeat; 
- height: 70vh;
- padding: 3em;
-}
-
-.second {
- background-image: url("../img/island.png");
- /*change transparency*/
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat; 
-}
-
-.contact {
-  background-image: url("http://uncommoncarib.wpengine.netdna-cdn.com/wp-content/uploads/2010/12/White-sand-beach.jpg");
- /*change transparency*/
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat; 
-}
 
 /*Navbar*/
 
 .navbar {
    margin-bottom: 20px;
+
 }
 
 .navbar-brand > img {
@@ -81,6 +58,7 @@ html {
 
 .navbar.color {
    background-color: #FBF6A8;
+   opacity: 0.7;
 }
 
 .navbar .navbar-toggle {
@@ -94,8 +72,16 @@ html {
 .hamburger-font {
    margin-top: 12px;
    color: black;
-   font-family: 'Modak', cursive;
+   font-family: 'Open Sans', sans-serif;
    font-size: 20px;
+}
+
+.hamburger-font:hover {
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: none;
 }
 
 @media (max-width: 990px) {
@@ -107,6 +93,15 @@ html {
 /*Navbar End*/
 
 /*Home Page*/
+
+.item.home {
+  margin-top: 100px;
+  border: 5px solid #66c2ff;
+}
+
+/*Home Menu*/
+
+/*Menu Page*/
 
 .meals-showcase { /*this is the ul*/
   list-style: none; /*removes unordered list dots*/
@@ -164,9 +159,9 @@ h3 {
 }
 /*Footer*/
 
-.container-fluid .footer {
-   height: 70px;
+.footer {
    background-color: #FBF6A8;
+   opacity: 0.7;
 }
 
 .fa {
@@ -178,7 +173,7 @@ h3 {
 
 .fa.fa-twitter {
    background-color: #36A8EE;
-   font-size: 30px;
+   font-size: 12px;
 }
 
 .twitter {
@@ -188,7 +183,7 @@ h3 {
 .fa.fa-facebook {
    background-color: #2445A6;
    padding: 5px;
-   font-size: 30px;
+   font-size: 12px;
 }
 
 .facebook {
@@ -197,7 +192,7 @@ h3 {
 
 .fa.fa-yelp {
    background-color: #D32323;
-   font-size: 30px;
+   font-size: 12px;
 }
 
 .yelp {
@@ -205,7 +200,7 @@ h3 {
 }
 
 .socialMedia {
-   font-family: 'Modak', cursive;
+   font-family: 'Open Sans', sans-serif;
    font-size: 20px;
 }
 
@@ -226,8 +221,7 @@ h3 {
 
 @media (max-width: 347px) {
    .socialMedia {
-      font-size: 10px;
-      
+      font-size: 10px;  
    }
 }
 
@@ -239,21 +233,14 @@ h3 {
    }
 }
 
-.footer {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #FBF6A8;
-  text-align: center;
-}
-
 .address,
 .phone {
    font-family: 'Roboto Slab', serif;
-   font-size: 12px;
+   font-size: 9px;
    font-weight: bold;
-}
+   margin-top: 5px;
+]
+
 
 /*Footer End*/
 
