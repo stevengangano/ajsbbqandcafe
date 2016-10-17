@@ -1,3 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Home page design for Lion Clouds Production">
+    <title>Contact</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body style="min-height:100%">
+
 <nav class="navbar color">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -28,10 +46,6 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-       <div class="square"></div>
-       
-  
-
 <div id="wrapper" style="padding-left:12px" >
       <h1><strong>Contact Page </strong> </h1>
       <hr>
@@ -47,12 +61,6 @@
     <label for="email"> Email </label><br>
     <input type="text" id="email" name="email"><br><br>
     
-       <label for="city">City </label><br>
-    <input type="text" id="city" name="city"><br><br>
-
-       <label for="state"> State </label><br>
-    <input type="text" id="state" name="state"><br><br>
-
     <label for="comment"> Comment  </label><br>    
     <textarea rows="5" cols="50" name="message"></textarea><br><br>
     <button name="submit" type="submit" class="btn btn-default">Submit</button>
@@ -61,16 +69,36 @@
 </div>
 <!-- wrapper -->
 
-<footer class='container-fluid footer'>
-  <div class="row">
-    <div class="col-lg-12">
-      <div class = "icons text-center">
-        <span class='socialMedia'> Follow us on &#8226 <span class='twitter'>Twitter</span> &#8226 <span class='facebook'>Facebook</span> &#8226 <span class='yelp'>Yelp</span> </span>
-        <a href=""><i class="fa fa-twitter"></i></a>
-        <a href="https://www.facebook.com/pages/Ajs-Bbq-And-Cafe/1671155576494952?ref=br_rs"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.yelp.com/biz/ajs-bbq-and-cafe-san-francisco"><i class="fa fa-yelp"></i></a>
-        <br>
-         <a href="#/contact"><p class="footer-address"> 2275 San Jose Ave San Francisco, CA, 94112 &#8226 Phone: (415) 825-5983 </p></a>
-      </div>
-    </div>
-</footer>
+    <footer>
+      
+    </footer>
+    <!-- footer -->
+
+    <script src="js/jquery2.0.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+<?php 
+
+
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$recipient = "stevengangano@yahoo.com";
+$subject = "Message"; 
+
+mail($recipient, $subject, $message, "From: " . $name );
+echo "Your message has been sent";
+ 
+ 
+
+?>
+
+
+
+</html>

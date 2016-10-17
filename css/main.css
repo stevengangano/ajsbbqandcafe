@@ -1,13 +1,20 @@
 body {
-   text-align: center;
-   margin: 0px auto;
+  text-align: center;
+  margin: 0px auto;
+}
+
+html {
+  background color: white;
+  font-family: 'Lato', 'Arial';
+  font-weight: 300;
+  font-size: 100px;
+  text-rendering: optimizeLegibility;
 }
 
 /*Navbar*/
 
 .navbar {
    margin-bottom: 20px;
-
 }
 
 .navbar-brand > img {
@@ -207,7 +214,6 @@ body {
   }
 }
 
-
 .yellow-square:hover,
 .red-square:hover {
   opacity: 0.5;
@@ -218,20 +224,34 @@ body {
   color: white;
 }
 
-
-.yellow-square-one {
-  width: 25%;
-  height: 125px;
-  background-color: #F3DB3F;
-  display: inline-block;
+h3.font,
+p.font {
+  height: 5%;
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 400px) { 
+  h3.font,
+  p.font {
+      font-size: 20%;
+    } 
 }
 
-.red-square-one {
-  width: 25%;
-  height: 125px;
-  display: inline-block;
-  background-color: #A03021;
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 1089px) {
+  h3.font,
+  p.font {
+      font-size: 50%;
+    } 
 }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+  h3.font,
+  p.font {
+      font-size: 95%;
+    }  
+}
+
 /*Home End*/
 .meals-showcase { /*this is the ul*/
   list-style: none; /*removes unordered list dots*/
@@ -276,7 +296,7 @@ h3 {
 }
 
 .box p {
-  font-size: 90%;
+  font-size: 50%;
   line-height: 145%; /*space between each line*/
 }
 
@@ -290,49 +310,7 @@ h3 {
 
 /*Home Page*/
 
-.name {
-   font-family: 'Modak', cursive;
-   font-size: 40px;
-   color: black;
-}
-
-
-@media (max-width: 464px) {
-   .name {
-    font-size: 25px;    
-   }
-}
-
-.nameTwo {
-   font-family: 'Roboto Slab', serif;
-   font-size: 20px;
-   letter-spacing: 2px;
-   color: black;
-}
-
-@media (max-width: 588px) {
-   .nameTwo {
-    font-size: 20px;    
- }
-
- @media (max-width: 464px) {
-   .nameTwo {
-    font-size: 10px;    
- }
-
-@media (max-width: 1300px) {
-   .logo {
-    height: 50%; 
-    width: 50%;  
- }
-
- @media (max-width: 464px) {
-   .logo {
-    height: 50%; 
-    width: 50%;  
- }
-
-/* Meals*/
+/* Menu */
 .meal-showcase {
   list-style: none; /*removes unordered list dots*/
   width: 100%; /*so it takes up the whole browser width*/

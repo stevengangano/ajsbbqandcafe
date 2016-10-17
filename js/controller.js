@@ -19,7 +19,7 @@ myApp.config(function ($routeProvider) {
 	})
 
 	.when ('/contact', {
-		templateUrl: 'pages/contact.html'
+		templateUrl: 'pages/contact.php'
 		// controller: '2015videoGameCtrl'
 	})
 
