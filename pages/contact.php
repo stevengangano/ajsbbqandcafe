@@ -16,7 +16,7 @@
 
 <body style="min-height:100%">
 
-<nav class="navbar color">
+   <nav class="navbar color">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -51,7 +51,7 @@
       <hr>
      
  
-<form role="form" method="post" action="contact.php">
+<form role="form" method="post" action="pages/email.html">
   <fieldset>
  
     <label for="name"> Name  </label><br>
@@ -61,6 +61,13 @@
     <label for="email"> Email </label><br>
     <input type="text" id="email" name="email"><br><br>
     
+       <label for="city">City </label><br>
+    <input type="text" id="city" name="city"><br><br>
+
+       <label for="state"> State </label><br>
+    <input type="text" id="state" name="state"><br><br>
+
+<br>
     <label for="comment"> Comment  </label><br>    
     <textarea rows="5" cols="50" name="message"></textarea><br><br>
     <button name="submit" type="submit" class="btn btn-default">Submit</button>
@@ -68,6 +75,12 @@
 <!-- form -->
 </div>
 <!-- wrapper -->
+
+<br>
+
+<div class="map-responsive">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6311.716152833115!2d-122.45514191580209!3d37.72300904228709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e820309f599%3A0x4a970cf74aa2d80c!2s2275+San+Jose+Avenue%2C+San+Francisco%2C+CA+94112!5e0!3m2!1sen!2sus!4v1476931816874" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div
 
     <footer>
       
@@ -88,12 +101,19 @@
 
 $name = $_POST['name'];
 $email = $_POST['email'];
+$city = $_POST['city'];
+$state = $_POST['state'];
 $message = $_POST['message'];
-$recipient = "stevengangano@yahoo.com";
-$subject = "Message"; 
 
-mail($recipient, $subject, $message, "From: " . $name );
-echo "Your message has been sent";
+$formcontent="From: $name \n Email: $email \n  City: $city \n State: $state \n Message: $message";
+
+$recipient = 'stevengangano@yahoo.com'; //whatever email you want it to go to
+
+$subject = "Message";
+$mailheader = "From: $email \r\n";
+mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+$home_url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . '/sent.php';
+  header('Location: ' . $home_url);
  
  
 

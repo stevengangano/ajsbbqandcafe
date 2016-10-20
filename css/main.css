@@ -331,3 +331,30 @@ h3 {
   width: 100%; /*has the same width as its container “.meal-photo”*/
   height: auto;
 }
+
+/****MAX'S CSS****/
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .home-side {
+      font-size: 80%;
+    }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-side {
+      font-size: 120%;
+  }
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .home-side {
+      font-size: 140%;
+    }
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+  .home-side {
+    font-size: 160%;
+  }
+}

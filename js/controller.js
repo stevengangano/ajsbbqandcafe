@@ -23,6 +23,11 @@ myApp.config(function ($routeProvider) {
 		// controller: '2015videoGameCtrl'
 	})
 
+	.when ('/email', {
+		templateUrl: 'pages/email.html'
+		// controller: '2015videoGameCtrl'
+	})
+
 	.when ('/home', {
 		templateUrl: 'pages/home.html'
 		// controller: '2015videoGameCtrl'
