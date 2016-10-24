@@ -57,8 +57,8 @@ html {
 }
 
 .navbar.color {
-   background-color: #FBF6A8;
-   opacity: 0.7;
+   background-color: #A03021;
+/*   opacity: 0.7;*/
 }
 
 .navbar .navbar-toggle {
@@ -95,8 +95,12 @@ html {
 /*Footer*/
 
 .footer {
-   background-color: #FBF6A8;
-   opacity: 0.7;
+   background-color: #A03021;
+  /* opacity: 0.7;*/
+}
+
+.icons{
+  margin: 12px 0 12px 0;
 }
 
 .fa {
@@ -180,21 +184,16 @@ html {
 
 /*Home Page*/
 
-/*@media (min-width: 1200px) {
-   .home-carousel {
-      position: relative;
-      left: 175px;
-      margin-top: 63px;
-  }
-}*/
-
+.grid-box {
+  margin-top: 10px
+}
 .grid {
   margin: 5px;
 }
 .yellow-square {
   margin: 2px;
   width: 30%;
-  height: 125px;
+  height: 100px;
   background-color: #F3DB3F;
   display: inline-block;
 }
@@ -202,7 +201,7 @@ html {
 .red-square {
   margin: 2px;
   width: 30%;
-  height: 125px;
+  height: 100px;
   display: inline-block;
   background-color: #A03021;
 }
@@ -220,37 +219,57 @@ html {
 }
 
 .nav-text {
-  line-height: 125px; /*same height as div so it is vertically aligned*/
+  line-height: 100px; /*same height as div so it is vertically aligned*/
   color: white;
 }
 
-h3.font,
-p.font {
-  height: 5%;
-}
-/* Small devices (tablets, 768px and up) */
-@media (max-width: 400px) { 
-  h3.font,
-  p.font {
-      font-size: 20%;
-    } 
+
+/*home side*/
+
+.no-dec{
+  text-decoration: none;
+  color: black;
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (max-width: 1089px) {
-  h3.font,
-  p.font {
-      font-size: 50%;
-    } 
+.nopadding {
+   padding: 0px !important;
+   margin: 0px !important;
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) { 
-  h3.font,
-  p.font {
-      font-size: 95%;
-    }  
+.address-phone {
+  font-size: 120%;
 }
+
+.address-call-hours {
+  font-size: 120%;
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration: none
+}
+
+.hours-day {
+  font-weight: bold;
+}
+
+.yelp-side{
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5%
+}
+
+.facebook-side{
+  padding: 8px;
+  text-align: center;
+  border: 1px solid black;
+   text-decoration: none;
+}
+
+.yelp-text,
+.facebook-text {
+  color: black;
+  text-decoration: none;
+}
+
 
 /*Home End*/
 .meals-showcase { /*this is the ul*/
@@ -330,31 +349,4 @@ h3 {
 .meal-photo img {
   width: 100%; /*has the same width as its container “.meal-photo”*/
   height: auto;
-}
-
-/****MAX'S CSS****/
-
-/* Extra small devices (phones, up to 480px) */
-@media screen and (max-width: 767px) {
-    .home-side {
-      font-size: 80%;
-    }
-}
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .home-side {
-      font-size: 120%;
-  }
-}
-/* tablets/desktops and up ----------- */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .home-side {
-      font-size: 140%;
-    }
-}
-/* large desktops and up ----------- */
-@media screen and (min-width: 1200px) {
-  .home-side {
-    font-size: 160%;
-  }
 }

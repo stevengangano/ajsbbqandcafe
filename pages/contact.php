@@ -61,11 +61,11 @@
     <label for="email"> Email </label><br>
     <input type="text" id="email" name="email"><br><br>
     
-       <label for="city">City </label><br>
+     <!--   <label for="city">City </label><br>
     <input type="text" id="city" name="city"><br><br>
 
        <label for="state"> State </label><br>
-    <input type="text" id="state" name="state"><br><br>
+    <input type="text" id="state" name="state"><br><br> -->
 
 <br>
     <label for="comment"> Comment  </label><br>    
@@ -101,11 +101,11 @@
 
 $name = $_POST['name'];
 $email = $_POST['email'];
-$city = $_POST['city'];
-$state = $_POST['state'];
+// $city = $_POST['city'];
+// $state = $_POST['state'];
 $message = $_POST['message'];
 
-$formcontent="From: $name \n Email: $email \n  City: $city \n State: $state \n Message: $message";
+$formcontent="From: $name \n Email: $email \n Message: $message";
 
 $recipient = 'stevengangano@yahoo.com'; //whatever email you want it to go to
 
