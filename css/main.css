@@ -190,20 +190,24 @@ html {
 .grid {
   margin: 5px;
 }
-.yellow-square {
-  margin: 2px;
+.brown-square {
   width: 30%;
   height: 100px;
-  background-color: #F3DB3F;
+  background-color: #422C1C;
   display: inline-block;
+  border: 2px solid #FFD700;
 }
 
 .red-square {
-  margin: 2px;
   width: 30%;
   height: 100px;
   display: inline-block;
   background-color: #A03021;
+  border: 2px solid #FFD700;
+}
+
+.top-box {
+  margin-bottom: 5px;
 }
 
 @media (max-width: 323px) {
@@ -213,7 +217,7 @@ html {
   }
 }
 
-.yellow-square:hover,
+.brown-square:hover,
 .red-square:hover {
   opacity: 0.5;
 }
@@ -229,6 +233,10 @@ html {
 .no-dec{
   text-decoration: none;
   color: black;
+}
+
+.slider {
+  margin-top: 5px;
 }
 
 .nopadding {
