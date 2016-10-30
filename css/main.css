@@ -227,7 +227,12 @@ html {
 
 /*home side*/
 
-.no-dec{
+.side-bar {
+  background-color: orange;
+}
+
+.no-dec {
+  font-size: 90%
   text-decoration: none;
   color: black;
 }
@@ -238,16 +243,13 @@ html {
 }
 
 .address-phone {
-  font-size: 120%;
-  font-family: 'Montserrat', sans-serif;
-
+  font-size: 115%;
 }
 
-.address-call-hours {
+.address-call-hours-connect {
   font-size: 120%;
   text-decoration: underline;
   font-weight: bold;
-  text-decoration: none
 }
 
 .hours-day {
@@ -256,24 +258,32 @@ html {
 
 .yelp-side{
   padding: 8px;
-  border: 1px solid black;
-  border-radius: 5%
 }
 
 .facebook-side{
   padding: 8px;
   text-align: center;
-  border: 1px solid black;
   text-decoration: none;
 }
+
 
 .yelp-text,
 .facebook-text {
   color: black;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
+  border-radius: 5%;
 }
 
+.yelp-text:hover,
+.facebook-text:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.gray {
+  background-color: gray;
+}
 
 /*Home End*/
 .meals-showcase { /*this is the ul*/

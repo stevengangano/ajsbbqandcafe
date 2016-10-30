@@ -46,41 +46,91 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div id="wrapper" style="padding-left:12px" >
-      <h1><strong>Contact Page </strong> </h1>
-      <hr>
+<!-- Carousel -->
+<div class="container">
+  <div class="row slider">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-lg-push-1">
+      <div id="myCarousel" class="carousel slide text-center" data-ride="carousel" data-interval="3000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators text-center">
+          <li data-target="#myCarousel" data-slide-to="0" class="active text-center"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item home active">
+            <img src="https://www.maxschicken.com/administrator/public/uploads/banners/c6d0aa8ff7380689f5bd9e13a447aaa8.jpg" alt="Chania">
+          </div>
+
+          <div class="item home">
+            <img src="https://www.maxschicken.com/administrator/public/uploads/banners/96ebdd45abc348a4fbc064beb6b2eae3.jpg" alt="Chania">
+          </div>
+
+          <div class="item home">
+            <img src="https://www.maxschicken.com/administrator/public/uploads/banners/8dc581e1717dbf079655d1715dee08e1.jpg" alt="Flower">
+          </div>
+
+          <div class="item home">
+            <img src="https://www.maxschicken.com/administrator/public/uploads/banners/5b3153ad5c7603670b97925097ee6f4f.jpg" alt="Flower">
+          </div>
+        </div> <!-- end carousel-inner -->
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-sm-8">
+
+      <div id="wrapper" style="padding-left:12px" >
+        <h1><strong>Contact Page </strong> </h1>
+        <hr>
      
  
-<form role="form" method="post" action="pages/email.html">
-  <fieldset>
+      <form role="form" method="post" action="pages/email.html">
+        <fieldset>
  
-    <label for="name"> Name  </label><br>
-    <input type="text" id="name" name="name">
-   <br><br>
-   
-    <label for="email"> Email </label><br>
-    <input type="text" id="email" name="email"><br><br>
-    
-     <!--   <label for="city">City </label><br>
-    <input type="text" id="city" name="city"><br><br>
+        <label for="name"> Name  </label><br>
+        <input type="text" id="name" name="name">
+       
+        <br><br>
+       
+        <label for="email"> Email </label><br>
+        <input type="text" id="email" name="email"><br><br>
+      
+       <!--   <label for="city">City </label><br>
+      <input type="text" id="city" name="city"><br><br>
 
-       <label for="state"> State </label><br>
-    <input type="text" id="state" name="state"><br><br> -->
+         <label for="state"> State </label><br>
+      <input type="text" id="state" name="state"><br><br> -->
 
-<br>
-    <label for="comment"> Comment  </label><br>    
-    <textarea rows="5" cols="50" name="message"></textarea><br><br>
-    <button name="submit" type="submit" class="btn btn-default">Submit</button>
-</form>
+      <br>
+
+      <label for="comment"> Comment  </label><br>    
+      <textarea rows="5" cols="50" name="message"></textarea><br><br>
+      <button name="submit" type="submit" class="btn btn-default">Submit</button>
+    </form>
 <!-- form -->
+  </div>
+  <!-- wrapper -->
+  <br>
+    </div>
+      <div class="col-lg-12 col-sm-4">
+        <div class='gray'>
+
+          <div class="map-responsive">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6311.716152833115!2d-122.45514191580209!3d37.72300904228709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e820309f599%3A0x4a970cf74aa2d80c!2s2275+San+Jose+Avenue%2C+San+Francisco%2C+CA+94112!5e0!3m2!1sen!2sus!4v1476931816874" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+  </div> <!-- end row -->
 </div>
-<!-- wrapper -->
 
-<br>
-
-<div class="map-responsive">
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6311.716152833115!2d-122.45514191580209!3d37.72300904228709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e820309f599%3A0x4a970cf74aa2d80c!2s2275+San+Jose+Avenue%2C+San+Francisco%2C+CA+94112!5e0!3m2!1sen!2sus!4v1476931816874" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div
 
     <footer>
       
