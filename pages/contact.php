@@ -82,27 +82,31 @@
   </div>
 </div>
 
-
+<br>
 
 <div class="container">
   <div class="row">
     <div class="col-lg-12 col-sm-8">
 
       <div id="wrapper" style="padding-left:12px" >
-        <h1><strong>Contact Page </strong> </h1>
-        <hr>
-     
- 
+      
       <form role="form" method="post" action="pages/email.html">
         <fieldset>
  
-        <label for="name"> Name  </label><br>
+        <label for="name"> Name<span class="asterik">*</span></label>
         <input type="text" id="name" name="name">
        
         <br><br>
-       
-        <label for="email"> Email </label><br>
-        <input type="text" id="email" name="email"><br><br>
+
+        <label for="email"> Email<span class="asterik">*</span> </label>
+        <input type="text" id="email" name="email">
+
+        <br><br>
+
+        <label for="phone"> Phone<span class="asterik">*</span> </label>
+        <input type="text" id="phone" name="phone">
+
+        <br><br>
       
        <!--   <label for="city">City </label><br>
       <input type="text" id="city" name="city"><br><br>
@@ -110,9 +114,7 @@
          <label for="state"> State </label><br>
       <input type="text" id="state" name="state"><br><br> -->
 
-      <br>
-
-      <label for="comment"> Comment  </label><br>    
+      <label for="message" class="message">Message<span class="asterik">*</span> </label><br>    
       <textarea rows="5" cols="50" name="message"></textarea><br><br>
       <button name="submit" type="submit" class="btn btn-default">Submit</button>
     </form>
@@ -122,7 +124,7 @@
   <br>
     </div>
       <div class="col-lg-12 col-sm-4">
-        <div class='gray'>
+        <div>
 
           <div class="map-responsive">
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6311.716152833115!2d-122.45514191580209!3d37.72300904228709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e820309f599%3A0x4a970cf74aa2d80c!2s2275+San+Jose+Avenue%2C+San+Francisco%2C+CA+94112!5e0!3m2!1sen!2sus!4v1476931816874" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -150,12 +152,13 @@
 
 
 $name = $_POST['name'];
+$phone = $_POST['phone'];
 $email = $_POST['email'];
 // $city = $_POST['city'];
 // $state = $_POST['state'];
 $message = $_POST['message'];
 
-$formcontent="From: $name \n Email: $email \n Message: $message";
+$formcontent="From: $name \n Phone: \n $phone \n $ Email: $email \n Message: $message";
 
 $recipient = 'stevengangano@yahoo.com'; //whatever email you want it to go to
 

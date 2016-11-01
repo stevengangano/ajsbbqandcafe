@@ -26,32 +26,6 @@ html {
    margin-top: 12px;
 }
 
-
-@media (max-width: 320px) {
-   .navbar-brand.title {
-      position: relative;
-      right: 10px;
-      bottom: 59px;
-   }
-}
-
-@media (max-width: 384px) {
-   .navbar-brand.title {
-      position: relative;
-      right: 10px;
-      bottom: 59px;
-   }
-}
-
-@media (max-width: 470px) {
-   .navbar-brand.title {
-      position: relative;
-      bottom: 8px;
-      right: 12px;
-      width: 55%;
-   }
-}
-
 .navbar.color {
    background-color: #A03021;
 /*   opacity: 0.7;*/
@@ -78,12 +52,6 @@ html {
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
     background-color: none;
-}
-
-@media (max-width: 990px) {
-   .hamburger-font {
-      font-size: 19px;
-   }
 }
 
 /*Navbar End*/
@@ -139,35 +107,6 @@ html {
    font-size: 20px;
 }
 
-@media (max-width: 539px) {
-   .socialMedia {
-      font-size: 12px;
-      
-   }
-}
-
-@media (max-width: 539px) {
-   .fa.fa-twitter,
-   .fa.fa-facebook,
-   .fa.fa-yelp {
-    font-size: 12px;    
-   }
-}
-
-@media (max-width: 347px) {
-   .socialMedia {
-      font-size: 10px;  
-   }
-}
-
-@media (max-width: 347px) {
-   .fa.fa-twitter,
-   .fa.fa-facebook,
-   .fa.fa-yelp {
-    font-size: 10px;    
-   }
-}
-
 .address,
 .phone {
    font-family: 'Roboto Slab', serif;
@@ -204,13 +143,6 @@ html {
 
 .top-box {
   margin-bottom: 5px;
-}
-
-@media (max-width: 323px) {
-  .yellow-square,
-  .red-square {
-    font-size: 90%;
-  }
 }
 
 .brown-square:hover,
@@ -363,4 +295,9 @@ h3 {
 .meal-photo img {
   width: 100%; /*has the same width as its container “.meal-photo”*/
   height: auto;
+}
+
+/*Contact Page*/
+.asterik{
+  color: red;
 }

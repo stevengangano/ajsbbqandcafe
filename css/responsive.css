@@ -1,0 +1,73 @@
+/*Navbar*/
+
+
+@media (max-width: 320px) {
+   .navbar-brand.title {
+      position: relative;
+      right: 10px;
+      bottom: 59px;
+   }
+}
+
+@media (max-width: 384px) {
+   .navbar-brand.title {
+      position: relative;
+      right: 10px;
+      bottom: 59px;
+   }
+}
+
+@media (max-width: 470px) {
+   .navbar-brand.title {
+      position: relative;
+      bottom: 8px;
+      right: 12px;
+      width: 55%;
+   }
+}
+
+/*Footer*/
+@media (max-width: 539px) {
+   .socialMedia {
+      font-size: 12px;
+      
+   }
+}
+
+@media (max-width: 539px) {
+   .fa.fa-twitter,
+   .fa.fa-facebook,
+   .fa.fa-yelp {
+    font-size: 12px;    
+   }
+}
+
+@media (max-width: 347px) {
+   .socialMedia {
+      font-size: 10px;  
+   }
+}
+
+@media (max-width: 347px) {
+   .fa.fa-twitter,
+   .fa.fa-facebook,
+   .fa.fa-yelp {
+    font-size: 10px;    
+   }
+}
+
+/*Home Grid*/
+@media (max-width: 323px) {
+  .brown-square,
+  .red-square {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 318px) {
+  .brown-square,
+  .red-square {
+    width: 48%;
+  }
+}
+
