@@ -35,6 +35,10 @@ html {
    margin-top: 17px;
 }
 
+ .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+            background-color:red;
+ }
+
 .navbar .navbar-toggle .icon-bar.hamburger {
     background-color: black;
 }
@@ -42,7 +46,7 @@ html {
 .hamburger-font {
    margin-top: 12px;
    color: black;
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'Prociono', serif;
    font-size: 20px;
 }
 
@@ -305,6 +309,7 @@ h3 {
   width: 100%; /*has the same width as its container “.meal-photo”*/
   height: auto;
 }
+
 
 /*Contact Page*/
 .asterik{
