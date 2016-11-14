@@ -49,7 +49,7 @@
 <!-- Carousel -->
 <div class="container">
   <div class="row slider">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-lg-push-1">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-md-push-2 col-lg-10 col-lg-push-1 nopadding">
       <div id="myCarousel" class="carousel slide text-center" data-ride="carousel" data-interval="3000">
         <!-- Indicators -->
         <ol class="carousel-indicators text-center">
@@ -61,6 +61,7 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
+
           <div class="item home active">
             <img src="https://www.maxschicken.com/administrator/public/uploads/banners/c6d0aa8ff7380689f5bd9e13a447aaa8.jpg" alt="Chania">
           </div>
@@ -76,11 +77,21 @@
           <div class="item home">
             <img src="https://www.maxschicken.com/administrator/public/uploads/banners/5b3153ad5c7603670b97925097ee6f4f.jpg" alt="Flower">
           </div>
+
         </div> <!-- end carousel-inner -->
-        </div>
+
+        <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel"  role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+      </div>
     </div>
   </div>
-</div>
 
 <br>
 
@@ -155,6 +166,12 @@
 
 
     <script src="js/script.js"></script>
+    <!-- NEEDED FOR CAROUSEL SLIDER GLYPHICONS -->
+    <script>
+      $('.carousel-control').click(function(e){
+        e.preventDefault();
+      });
+    </script>
 
 </body>
 <?php 
@@ -181,7 +198,5 @@ $home_url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . 
  
 
 ?>
-
-
 
 </html>

@@ -289,6 +289,11 @@ h3 {
 /*Home Page*/
 
 /* Menu */
+
+.section-meals{
+  position: relative;
+  right: 18px;
+}
 .meal-showcase {
   list-style: none; /*removes unordered list dots*/
   width: 100%; /*so it takes up the whole browser width*/
@@ -308,6 +313,11 @@ h3 {
 .meal-photo img {
   width: 100%; /*has the same width as its container “.meal-photo”*/
   height: auto;
+}
+
+.item-price{
+  font-weight: 200;
+  font-size: 80%;
 }
 
 
