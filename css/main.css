@@ -170,7 +170,7 @@ html {
 }
 
 .no-dec {
-  font-size: 90%
+  font-size: 90%;
   text-decoration: none;
   color: black;
 }
@@ -255,19 +255,24 @@ html {
   opacity: 0.7;
   width: 100%; /*has the same width as its container “.meal-photo”*/
   height: auto;
-  transform: scale(1.15); /*will be 115% big*/
-  transition: transform 0.5s, opacity 0.5s; /*animates the images*/
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15); /*will be 115% big*/
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; /*animates the images*/
 }
 
 .meal-photo img:hover {
-  transform: scale(1.3); /*when hovered it goes back to a little bigger than normal size*/
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3); /*when hovered it goes back to a little bigger than normal size*/
   opacity: 1; /*when hovered over it changes back to 100%*/
 }
 
 /*Section Features*/
 
 h3 {
-  font-size: 100%
+  font-size: 100%;
   word-spacing: 2px; /*space between each word*/
   text-align: center;
   margin-bottom: 30px;
@@ -314,12 +319,6 @@ h3 {
   width: 100%; /*has the same width as its container “.meal-photo”*/
   height: auto;
 }
-
-.item-price{
-  font-weight: 200;
-  font-size: 80%;
-}
-
 
 /*Contact Page*/
 .asterik{

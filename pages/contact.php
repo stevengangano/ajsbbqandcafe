@@ -155,10 +155,16 @@
    </iframe>
   </div>
 
-    <footer>
-      
-    </footer>
-    <!-- footer -->
+<footer class='footer'>
+  <div class="container-fluid">
+    <div class = "icons">
+      <span class='socialMedia'> Follow us on &#8226 <span class='twitter'>Twitter</span> &#8226 <span class='facebook'>Facebook</span> &#8226 <span class='yelp'>Yelp</span> </span>
+      <a href=""><i class="fa fa-twitter"></i></a>
+      <a href="https://www.facebook.com/pages/Ajs-Bbq-And-Cafe/1671155576494952?ref=br_rs"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.yelp.com/biz/ajs-bbq-and-cafe-san-francisco"><i class="fa fa-yelp"></i></a>
+    </div>
+  </div>
+</footer>
 
     <script src="js/jquery2.0.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
