@@ -1,15 +1,153 @@
+/*Hamburger start*/
+#cpBtn{
+  float: right;
+  padding: 2px 5px;
+  line-height: 55px;
+}
+
+#cpBtn > div {
+  width: 20px;
+  height: 4px;
+  background: #4C130C;
+  margin: 3px 0px;
+  border-radius: 4px;
+}
+/*hamburger end*/
+
+
+.logo{
+  float: left;
+  font-weight: bold;
+}
+
+.menu-handle {
+  width: 100%;
+  display: none;
+}
+
+.menu-text{
+  font-size: 15px;
+  font-weight: bold;
+  float: right;
+  padding: 5px;
+  box-sizing: border-box;
+  line-height: 55px;
+  margin-right: 25px;
+}
+
+.logo-handle {
+  width: 100%;
+  display: none;
+}
+
+.logo-text {
+  color:#4C130C;
+  font-size: 15px;
+  font-weight: bold;
+  float: left;
+  padding: 5px;
+  box-sizing: border-box;
+  line-height: 55px;
+}
+
+.logo-img-handle {
+  width: 100%;
+  display: none;
+}
+
+.logo-img {
+  float: left;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.logo-responsive{
+  height: 55px;
+}
+
+.nav-main{
+  margin-left: 20px;
+}
+
+nav ul {
+  width: 100%;
+  overflow:hidden;
+  padding: 0;
+  text-align: right; /*centers the list items*/
+  transition: max-height 0.4s;
+}
+
+
+nav ul li {
+  display: inline-block; /*takes off bullet points and inlines*/
+  padding: 20px;
+  font-weight: 500;
+  color: #4C130C;
+}
+
+nav ul li:hover {
+  background-color: transparent;
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit; /*when hovered it takes color around it*/
+}
+
+@media (max-width: 625px) {
+
+    .logo {
+      display: none;
+    }
+
+    nav ul {
+    max-height: 0px; /*this hides nav list*/
+    }
+
+    .showing{
+    max-height: 20em; 
+    }
+
+    
+    nav ul li {
+    width: 100%;
+    box-sizing: border-box; /*doesn't expand dimensions of div when padding is applied. It leaves original dimensions.*/
+    padding: 5px;
+    float: right;
+    display: block;
+    margin-right: 25px;
+    }
+
+  .menu-handle {
+    display: block;
+  } 
+  .logo-handle {
+    display: block;
+  } 
+  .logo-img-handle {
+    display: block;
+  } 
+}
+
+/*sample nav end*/
+
 body {
   text-align: center;
   margin: 0px auto;
 }
 
 html {
-  background color: white;
   font-family: 'Lato', 'Arial';
   font-weight: 300;
   font-size: 100px;
   text-rendering: optimizeLegibility;
 }
+
+.background{
+  background: #FFF5DA;
+}
+
 
 /*Navbar*/
 
@@ -50,8 +188,6 @@ html {
    font-size: 20px;
 }
 
-.hamburger-font:hover {
-}
 
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
@@ -144,7 +280,7 @@ html {
   width: 30%;
   height: 100px;
   display: inline-block;
-  background-color: #A03021;
+  background-color: #9E3126;
   border: 2px solid #FFD700;
 }
 
@@ -184,10 +320,18 @@ html {
   font-size: 115%;
 }
 
+.address-phone,
+.time,
+.yelp-txt,
+.fb-txt {
+  color: #D29727;
+}
+
 .address-call-hours-connect {
   font-size: 120%;
   text-decoration: underline;
   font-weight: bold;
+  color: #4C130C;
 }
 
 .hours-day {
@@ -228,7 +372,16 @@ html {
 .fa.fa-newspaper-o,
 .fa.fa-calendar-o {
   font-size: 300%;
+  color: #E5A924;
  }
+
+.featured-events-news {
+  color: #E5A924;
+}
+
+.featured-events-news-text{
+  color: #4C130C;;
+}
 
 /*Home End*/
 .meals-showcase { /*this is the ul*/

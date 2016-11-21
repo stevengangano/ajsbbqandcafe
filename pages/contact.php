@@ -15,36 +15,24 @@
 </head>
 
 <body style="min-height:100%">
+<div> <img src="http://amourasf.com/images/leafpatterndesktop.png?crc=398212418"> </div>
 
-   <nav class="navbar color">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar hamburger"></span>
-        <span class="icon-bar hamburger"></span>
-        <span class="icon-bar hamburger"></span>
-      </button>
-     <a href='#/' class='navbar-brand'> 
-          <img alt='logo' class='img-responsive nav-logo' src='img/cover.png'> 
-           <a href='#/' class='navbar-brand title'> 
-            AJ's BBQ and Cafe
-          </a>
-      </a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a class="hamburger-font" href="#/">Home</a></li>
-        <li><a class="hamburger-font" href="#/menu">Menu</a></li>
-        <li><a class="hamburger-font" href="#/about">About Us</a></li>
-        <li><a class="hamburger-font" href="#/contact">Contact Us</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<header>
+  <nav class="nav-main">
+    <div class="logo-img-handle"><span class="logo-img"> <img src="img/cover4.png" class="logo-responsive"> </span> </div>
+    <div class="logo-handle"><span class="logo-text"> AJ's BBQ and Cafe </span> </div>
+    <div class="menu-handle"><span class="menu-text"> Menu </span> </div>
+    <ul>
+      <a href="#/home" class="logo"><img src="img/cover4.png"></a>
+      <a href="#/home" class="logo"><li>AJ's BBQ and Cafe</li></a>
+      <a href="#/home"><li>Home</li></a>
+      <a href="#/menu"><li>Menu</li></a>
+      <a href="#/about"><li>About</li></a>
+      <a href="#/contact"><li>Contact</li></a>
+    </ul>
+  </nav>
+</header>
+    
 
 <!-- Carousel -->
 <div class="container">
@@ -178,7 +166,11 @@
       $('.carousel-control').click(function(e){
         e.preventDefault();
       });
-    </script>
+
+      $('.menu-handle').on('click', function(){
+        $('nav ul').toggleClass('showing');
+    });
+</script>
 
 </body>
 <?php 

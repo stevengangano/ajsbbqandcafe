@@ -1,3 +1,26 @@
+/*navbar sample*/
+@media (max-width: 670px) {
+   #logo {
+  		margin-left: 200px;
+   }
+   .main-nav  {
+   	margin: 0 auto;
+   	text-align: center;
+   }
+}
+
+@media (max-width: 563px) {
+   #logo {
+  		margin-left: 25px;
+   }
+   .main-nav  {
+   	margin: 0 auto;
+   	text-align: center;
+   	font-size: 60%;
+   }
+}
+
+
 /*Navbar*/
 
 
