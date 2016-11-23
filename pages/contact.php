@@ -15,7 +15,8 @@
 </head>
 
 <body style="min-height:100%">
-<div> <img src="http://amourasf.com/images/leafpatterndesktop.png?crc=398212418"> </div>
+
+<img src="http://amourasf.com/images/leafpatterndesktop.png?crc=398212418" class="leaf"> 
 
 <header>
   <nav class="nav-main">
