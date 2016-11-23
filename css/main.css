@@ -44,7 +44,7 @@
   line-height: 90px;
   font-weight: bold;
   font-family: 'Eczar', serif;
-  font-size: 150%;
+  font-size: 100%;
 }
 
 .logo-img-handle {
@@ -125,6 +125,7 @@ a{
     float: right;
     display: block;
     font-family: 'Eczar', serif;
+    margin-right: 25px;
     }
 
     nav ul li:hover{
@@ -406,13 +407,13 @@ html {
 .meals-showcase li {
   display: block; /*makes each image on their own line*/
   float: left; /*floating makes images sit next to each other instead of stacked*/
-  width: 25%; /*makes each image 25% of width of “.meals-showcase”*/
+  width: 25%; /*makes each image 25% of width of â€œ.meals-showcaseâ€*/
   padding: 2px;
 }
 
 .meal-photo {
   border: 1px solid gold;
-  width: 100%; /*has the same width as its container “.meals-showcase li”*/
+  width: 100%; /*has the same width as its container â€œ.meals-showcase liâ€*/
   margin: 0;
   overflow: hidden; /*hides anything that comes out of its container*/
   background-color: black; /*makes background darker*/
@@ -420,7 +421,7 @@ html {
 
 .meal-photo img {
   opacity: 0.7;
-  width: 100%; /*has the same width as its container “.meal-photo”*/
+  width: 100%; /*has the same width as its container â€œ.meal-photoâ€*/
   height: auto;
   -webkit-transform: scale(1.15);
           transform: scale(1.15); /*will be 115% big*/
@@ -474,16 +475,16 @@ h3 {
 .meal-showcase li {
   display: block;/* makes each image on their own line*/
   float: left; /*floating makes images sit next to each other*/
-  width: 25%; /*makes each image 25% of width of “.meals-showcase”*/
+  width: 25%; /*makes each image 25% of width of â€œ.meals-showcaseâ€*/
 }
 
 .meal-photo {
-  width: 100%; /*has the same width as its container “.meals-showcase li”*/
+  width: 100%; /*has the same width as its container â€œ.meals-showcase liâ€*/
   margin: 0;
 }
 
 .meal-photo img {
-  width: 100%; /*has the same width as its container “.meal-photo”*/
+  width: 100%; /*has the same width as its container â€œ.meal-photoâ€*/
   height: auto;
 }
 
