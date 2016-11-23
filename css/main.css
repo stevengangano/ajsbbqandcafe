@@ -1,8 +1,8 @@
 /*Hamburger start*/
 #cpBtn{
+  margin-top: 30px;
   float: right;
   padding: 2px 5px;
-  line-height: 55px;
 }
 
 #cpBtn > div {
@@ -10,15 +10,9 @@
   height: 4px;
   background: #4C130C;
   margin: 3px 0px;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 /*hamburger end*/
-
-
-.logo{
-  float: left;
-  font-weight: bold;
-}
 
 .menu-handle {
   width: 100%;
@@ -31,8 +25,8 @@
   float: right;
   padding: 5px;
   box-sizing: border-box;
-  line-height: 55px;
-  margin-right: 25px;
+  line-height: 90px;
+  margin-right: 20px;
 }
 
 .logo-handle {
@@ -47,7 +41,10 @@
   float: left;
   padding: 5px;
   box-sizing: border-box;
-  line-height: 55px;
+  line-height: 90px;
+  font-weight: bold;
+  font-family: 'Eczar', serif;
+  font-size: 150%;
 }
 
 .logo-img-handle {
@@ -61,8 +58,16 @@
   box-sizing: border-box;
 }
 
+.logo{
+  float: left;
+  font-weight: bold;
+  font-family: 'Eczar', serif;
+  font-size: 150%;
+  line-height: 55px;
+}
+
 .logo-responsive{
-  height: 55px;
+  height: 90px;
 }
 
 .nav-main{
@@ -74,7 +79,10 @@ nav ul {
   overflow:hidden;
   padding: 0;
   text-align: right; /*centers the list items*/
+  -webkit-transition: max-height 0.4s;
   transition: max-height 0.4s;
+  line-height: 55px;
+  font-family: 'Eczar', serif;
 }
 
 
@@ -83,10 +91,11 @@ nav ul li {
   padding: 20px;
   font-weight: 500;
   color: #4C130C;
+  margin-right: 15px;
 }
 
 nav ul li:hover {
-  background-color: transparent;
+  color: #D29727;
 }
 
 
@@ -95,7 +104,7 @@ a{
   color: inherit; /*when hovered it takes color around it*/
 }
 
-@media (max-width: 625px) {
+@media (max-width: 775px) {
 
     .logo {
       display: none;
@@ -109,25 +118,30 @@ a{
     max-height: 20em; 
     }
 
-    
     nav ul li {
     width: 100%;
     box-sizing: border-box; /*doesn't expand dimensions of div when padding is applied. It leaves original dimensions.*/
     padding: 5px;
     float: right;
     display: block;
-    margin-right: 25px;
+    font-family: 'Eczar', serif;
     }
 
-  .menu-handle {
-    display: block;
-  } 
-  .logo-handle {
-    display: block;
-  } 
-  .logo-img-handle {
-    display: block;
-  } 
+    nav ul li:hover{
+      background: #FBF099;
+    }
+
+    .menu-handle {
+      display: block;
+    } 
+
+    .logo-handle {
+      display: block;
+    } 
+
+    .logo-img-handle {
+      display: block;
+    } 
 }
 
 /*sample nav end*/
@@ -473,6 +487,10 @@ h3 {
   height: auto;
 }
 
+/*About Page*/
+
+.about{
+}
 /*Contact Page*/
 .asterik{
   color: red;
