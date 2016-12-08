@@ -1,6 +1,24 @@
+body {
+  text-align: center;
+  margin: 0px auto;
+}
+
+html {
+  font-family: 'Lato', 'Arial';
+  font-weight: 300;
+  font-size: 100px;
+  text-rendering: optimizeLegibility;
+}
+
+.background{
+  background: #FFF5DA;
+}
+
+
 /*Hamburger start*/
+
 #cpBtn{
-  margin-top: 30px;
+  margin-top: 27px;
   float: right;
   padding: 2px 5px;
 }
@@ -18,6 +36,7 @@
 }
 /*hamburger end*/
 
+/*Navbar*/
 .menu-handle {
   width: 100%;
   display: none;
@@ -30,7 +49,7 @@
   padding: 5px;
   box-sizing: border-box;
   line-height: 90px;
-  margin-right: 20px;
+ /* margin-right: 20px;*/
 }
 
 .logo-handle {
@@ -67,11 +86,11 @@
   font-weight: bold;
   font-family: 'Eczar', serif;
   font-size: 150%;
-  line-height: 55px;
+  line-height: 45px;
 }
 
 .logo-responsive{
-  height: 90px;
+  height: 75px;
 }
 
 .nav-main{
@@ -85,7 +104,7 @@ nav ul {
   text-align: right; /*centers the list items*/
   -webkit-transition: max-height 0.4s;
   transition: max-height 0.4s;
-  line-height: 55px;
+  line-height: 45px;
   font-family: 'Eczar', serif;
 }
 
@@ -95,125 +114,19 @@ nav ul li {
   padding: 20px;
   font-weight: 500;
   color: #4C130C;
-  margin-right: 15px;
+/*  margin-right: 15px;*/
 }
 
 nav ul li:hover {
   color: #D29727;
 }
 
-
 a{
   text-decoration: none;
   color: inherit; /*when hovered it takes color around it*/
 }
 
-@media (max-width: 775px) {
-
-    .logo {
-      display: none;
-    }
-
-    nav ul {
-    max-height: 0px; /*this hides nav list*/
-    }
-
-    .showing{
-    max-height: 20em; 
-    }
-
-    nav ul li {
-    width: 100%;
-    box-sizing: border-box; /*doesn't expand dimensions of div when padding is applied. It leaves original dimensions.*/
-    padding: 5px;
-    float: right;
-    display: block;
-    font-family: 'Eczar', serif;
-    margin-right: 25px;
-    }
-
-    nav ul li:hover{
-      background: #FBF099;
-    }
-
-    .menu-handle {
-      display: block;
-    } 
-
-    .logo-handle {
-      display: block;
-    } 
-
-    .logo-img-handle {
-      display: block;
-    } 
-}
-
-/*sample nav end*/
-
-body {
-  text-align: center;
-  margin: 0px auto;
-}
-
-html {
-  font-family: 'Lato', 'Arial';
-  font-weight: 300;
-  font-size: 100px;
-  text-rendering: optimizeLegibility;
-}
-
-.background{
-  background: #FFF5DA;
-}
-
-
-/*Navbar*/
-
-.navbar-brand > img {
- display: block;
- height: 40px;
- width: 40px;
-}
-
-.navbar-brand.title {
-   font-family: 'Modak', cursive;
-   color: black;
-   font-size: 30px;
-   margin-top: 12px;
-}
-
-.navbar.color {
-   background-color: #A03021;
-/*   opacity: 0.7;*/
-}
-
-.navbar .navbar-toggle {
-   margin-top: 17px;
-}
-
- .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-            background-color:red;
- }
-
-.navbar .navbar-toggle .icon-bar.hamburger {
-    background-color: black;
-}
-
-.hamburger-font {
-   margin-top: 12px;
-   color: black;
-   font-family: 'Prociono', serif;
-   font-size: 20px;
-}
-
-
-.nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
-    background-color: none;
-}
-
-/*Navbar End*/
+/*nav end*/
 
 /*Footer*/
 
@@ -494,8 +407,14 @@ h3 {
 
 /*About Page*/
 
-.about{
+.about-photo{
+  margin-top: 28px;
 }
+.hr {
+  border-top: 1px solid black;
+}
+
+
 /*Contact Page*/
 .asterik{
   color: red;

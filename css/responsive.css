@@ -1,29 +1,47 @@
-/*navbar sample*/
-@media (max-width: 670px) {
-   #logo {
-  		margin-left: 200px;
-   }
-   .main-nav  {
-   	margin: 0 auto;
-   	text-align: center;
-   }
+@media (max-width: 775px) {
+
+    .logo{
+      display: none;
+    }
+    
+    nav ul {
+    max-height: 0px; /*this hides nav list*/
+    }
+
+    .showing{
+    max-height: 20em; 
+    }
+
+    nav ul li {
+    width: 100%;
+    box-sizing: border-box; /*doesn't expand dimensions of div when padding is applied. It leaves original dimensions.*/
+    padding: 5px;
+    float: right;
+    display: block;
+    font-family: 'Eczar', serif;
+   /* margin-right: 25px;*/
+    }
+
+    nav ul li:hover{
+      background: #FBF099;
+    }
+
+    .menu-handle {
+      display: block;
+    } 
+
+    .logo-handle {
+      display: block;
+    } 
+
+    .logo-img-handle {
+      display: block;
+    } 
 }
 
-@media (max-width: 563px) {
-   #logo {
-  		margin-left: 25px;
-   }
-   .main-nav  {
-   	margin: 0 auto;
-   	text-align: center;
-   	font-size: 60%;
-   }
-}
 
 
 /*Navbar*/
-
-
 @media (max-width: 320px) {
    .navbar-brand.title {
       position: relative;
