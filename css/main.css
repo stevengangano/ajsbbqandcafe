@@ -1,3 +1,8 @@
+.background-color{
+  background-color: white;
+}
+
+
 body {
   text-align: center;
   margin: 0px auto;
@@ -396,6 +401,7 @@ h3 {
 }
 
 .meal-photo {
+  border: 5px solid white;
   width: 100%; /*has the same width as its container â€œ.meals-showcase liâ€*/
   margin: 0;
 }
@@ -409,6 +415,7 @@ h3 {
 
 .about-photo{
   margin-top: 28px;
+
 }
 .hr {
   border-top: 1px solid black;

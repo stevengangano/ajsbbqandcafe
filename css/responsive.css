@@ -6,6 +6,7 @@
     
     nav ul {
     max-height: 0px; /*this hides nav list*/
+    margin-bottom: 20px;
     }
 
     .showing{
