@@ -1,8 +1,3 @@
-.background-color{
-  background-color: white;
-}
-
-
 body {
   text-align: center;
   margin: 0px auto;
@@ -385,6 +380,10 @@ h3 {
 
 /* Menu */
 
+.menu-headers{
+  text-decoration: underline;
+}
+
 .section-meals{
   position: relative;
   right: 18px;
@@ -423,6 +422,7 @@ h3 {
 
 
 /*Contact Page*/
-.asterik{
-  color: red;
+.phone-email {
+  text-decoration: underline;
+  color: #D29727;
 }
