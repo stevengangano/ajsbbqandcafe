@@ -114,6 +114,7 @@ nav ul li {
   padding: 20px;
   font-weight: 500;
   color: #4C130C;
+  letter-spacing: 2px;
 /*  margin-right: 15px;*/
 }
 
@@ -234,7 +235,7 @@ a{
 /*home side*/
 
 .side-bar {
-  background-color: orange;
+  background:pink;
 }
 
 .no-dec {
@@ -381,7 +382,25 @@ h3 {
 /* Menu */
 
 .menu-headers{
+  font-family: 'Eczar', serif;
+  color: #4C130C;
   text-decoration: underline;
+}
+
+.menu-headers:hover{
+  color: #D29727;
+}
+
+.menu-item{
+  font-family: 'Eczar', serif;
+}
+
+.item-description{
+  font-family: 'Lora', serif;
+}
+
+.flavor{
+  font-family: 'Eczar', serif;
 }
 
 .section-meals{
