@@ -37,5 +37,9 @@ myApp.config(function ($routeProvider) {
 		templateUrl: 'pages/menu.html'
 		// controller: '2015videoGameCtrl'
 	})
+	.when ('/maps', {
+		templateUrl: 'pages/maps.html'
+		// controller: '2015videoGameCtrl'
+	})
 })
 

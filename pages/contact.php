@@ -45,7 +45,7 @@
   <div class="row">
     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
-      <h1> Contact </h1>
+      <h1 class="contact-header"> Contact </h1>
       <hr class="hr">
 
      <h4 class="featured-events-news-text">
@@ -125,8 +125,6 @@
 
 </body>
 <?php 
-
-
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];

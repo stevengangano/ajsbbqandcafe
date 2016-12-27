@@ -257,6 +257,7 @@ a{
 .time,
 .yelp-txt,
 .fb-txt {
+  font-family: 'Alegreya', serif;
   color: #D29727;
 }
 
@@ -385,6 +386,7 @@ h3 {
   font-family: 'Eczar', serif;
   color: #4C130C;
   text-decoration: underline;
+  letter-spacing: 1px;
 }
 
 .menu-headers:hover{
@@ -395,8 +397,10 @@ h3 {
   font-family: 'Eczar', serif;
 }
 
+.item-extra,
 .item-description{
-  font-family: 'Lora', serif;
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
 }
 
 .flavor{
@@ -430,17 +434,30 @@ h3 {
 }
 
 /*About Page*/
+.about-header{
+  font-family: 'Alegreya', serif;
+}
 
+.about-header:hover{
+color: orange;
+}
 .about-photo{
   margin-top: 28px;
-
 }
+
 .hr {
   border-top: 1px solid black;
 }
 
 
 /*Contact Page*/
+.contact-header{
+  font-family: 'Alegreya', serif;
+}
+.contact-header:hover{
+color: #D29727;
+}
+
 .phone-email {
   text-decoration: underline;
   color: #D29727;
