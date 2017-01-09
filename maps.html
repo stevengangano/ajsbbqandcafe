@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Styled Maps - Night Mode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="css/main.css" rel="stylesheet"/>
+  <link href="css/responsive.css" rel="stylesheet"/>
+  <link href="css/lightbox.min.css" rel="stylesheet"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet"/>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Jquery MUST BE HERE FOR CAROUSEL TO WORK -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Prociono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Eczar:800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
+
+   <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+
+  <!-- Needs to be at the top -->
+  <script src="http://maps.googleapis.com/maps/api/js"></script> 
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 75%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 75%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+  <img src="http://amourasf.com/images/leafpatterndesktop.png?crc=398212418" class="leaf"> 
+
+    <header>
+      <nav class="nav-main">
+        <div class="logo-img-handle"><span class="logo-img"> <img src="img/cover.png" class="logo-responsive"> </span> </div>
+        <div class="logo-handle"><span class="logo-text"> AJ's  BBQ and Cafe</span> </div>
+        <!-- <div class="menu-handle"><span class="menu-text"> Menu </span> </div> -->
+        <div class="menu-handle">
+          <span class="menu-text"><button id="cpBtn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </button></span>
+        </div>
+        <ul>
+          <a href="#/home"><img src="img/cover.png" class="logo-responsive logo"></a>
+          <a href="#/home" class="logo"><li>AJ's BBQ and Cafe</li></a>
+          <a href="#/home"><li>Home</li></a>
+          <a href="#/menu"><li>Menu</li></a>
+          <a href="#/about"><li>About</li></a>
+          <a href="#/contact"><li>Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+    <div id="map"></div>
+
+    <script>
+      function initMap() {
+        // Styles a map in night mode.
+        var map = new 			           google.maps.Map(document.getElementById('map'), {
+          center: {lat: 37.720916, lng: -122.446220},
+          zoom: 15,
+          styles: [
+         {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#444444"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 45
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#46bcec"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    }
+          ]
+        });
+        
+       
+          var marker = new google.maps.Marker({
+          position: {lat: 37.720916, lng: -122.446220},
+          map: map,
+          title: "AJ'S BBQ and Cafe!"
+        });
+        
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBx7vv4vZoFsYStARsLbtsVy9AGOAq_U0&callback=initMap"
+    async defer></script>
+  </body>
+</html>

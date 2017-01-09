@@ -14,27 +14,30 @@ html {
   background: #FFF5DA;
 }
 
+.leaf{
+  width: 100%;
+}
 
-/*Hamburger start*/
+/*Hamburger menu*/
 
 #cpBtn{
   margin-top: 27px;
   float: right;
   padding: 2px 5px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 #cpBtn > div {
   width: 20px;
   height: 4px;
-  background: #4C130C;
+  background: black;
   margin: 3px 0px;
   border-radius: 2px;
 }
 
-.leaf{
-  margin-bottom: 5px;
-}
-/*hamburger end*/
+/*hamburger menu end*/
 
 /*Navbar*/
 .menu-handle {
@@ -407,6 +410,10 @@ h3 {
   font-family: 'Eczar', serif;
 }
 
+.catering{
+  color:pink;
+}
+
 .section-meals{
   position: relative;
   right: 18px;
@@ -439,8 +446,14 @@ h3 {
 }
 
 .about-header:hover{
-color: orange;
+color: #BB3A2C;
 }
+
+.about-desc{
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+}
+
 .about-photo{
   margin-top: 28px;
 }
@@ -449,16 +462,22 @@ color: orange;
   border-top: 1px solid black;
 }
 
-
 /*Contact Page*/
 .contact-header{
   font-family: 'Alegreya', serif;
 }
+
 .contact-header:hover{
-color: #D29727;
+color: #BB3A2C;
+}
+
+.phone-email,
+.contact-desc {
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
 }
 
 .phone-email {
   text-decoration: underline;
-  color: #D29727;
+  color: #D29727;  
 }

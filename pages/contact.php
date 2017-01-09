@@ -49,42 +49,42 @@
       <hr class="hr">
 
      <h4 class="featured-events-news-text">
-        AJ's BBQ and Cafe is located off the Geneva exit on US-101 at 2275 San Jose Ave, San Francisco, CA 94112. Parking in at AJ's BBQ and Cafe designated lot is available.
+        <span class="contact-desc"> AJ's BBQ and Cafe is located off the Geneva exit on US-101 at 2275 San Jose Ave, San Francisco, CA 94112. Parking in at AJ's BBQ and Cafe designated lot is available. </span>
 
         <br>
         <br>
         <br>
 
-        Call us at <span class="phone-email">(650) 754-6891</span>
-
-        <br>
-        <br>
-        <br>
-         
-        For private event inquiries, please contact <span class="phone-email">ajsbbqandcafe@gmail.com.com</span>
+         <span class="contact-desc"> Call us at <span> <span class="phone-email">(650) 754-6891</span>
 
         <br>
         <br>
         <br>
          
-        For inquiries, please contact:
+         <span class="contact-desc"> For private event inquiries, please contact </span> <span class="phone-email">ajsbbqandcafe@gmail.com.com</span>
+
+        <br>
+        <br>
+        <br>
+         
+         <span class="contact-desc"> For inquiries, please contact: 
 
         <br>
          
-        Kevin Guevarra | 650-644-4451
+        Kevin Guevarra | 650-644-4451 </span>
         <span class="phone-email">ajsbbqandcafe@gmail.com.com</span>  
 
         <br>
         <br>
         <br>
          
-        Comments or questions? 
+         <span class="contact-desc"> Comments or questions? </span>
 
         <br>
         <br>
         <br>
 
-        Contact us about your experience at <span class="phone-email"> ajsbbqandcafe@gmail.com</span>   
+         <span class="contact-desc"> Contact us about your experience at </span> <span class="phone-email"> ajsbbqandcafe@gmail.com</span>   
     </h4>
   </div> <!-- end col -->
 
@@ -99,7 +99,7 @@
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="map-responsive">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6311.716152833115!2d-122.45514191580209!3d37.72300904228709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e820309f599%3A0x4a970cf74aa2d80c!2s2275+San+Jose+Avenue%2C+San+Francisco%2C+CA+94112!5e0!3m2!1sen!2sus!4v1476931816874" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6311.716152833115!2d-122.45514191580209!3d37.72300904228709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e820309f599%3A0x4a970cf74aa2d80c!2s2275+San+Jose+Avenue%2C+San+Francisco%2C+CA+94112!5e0!3m2!1sen!2sus!4v1476931816874" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>  
   </div>  
