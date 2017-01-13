@@ -112,16 +112,6 @@
 
 
     <script src="js/script.js"></script>
-    <!-- NEEDED FOR CAROUSEL SLIDER GLYPHICONS -->
-    <script>
-      $('.carousel-control').click(function(e){
-        e.preventDefault();
-      });
-
-      $('.menu-handle').on('click', function(){
-        $('nav ul').toggleClass('showing');
-    });
-</script>
 
 </body>
 <?php 
