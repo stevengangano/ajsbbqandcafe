@@ -10,7 +10,7 @@
     }
 
     .showing{
-    max-height: 20em; 
+    max-height: 50em; 
     }
 
     nav ul li {
@@ -18,7 +18,7 @@
     box-sizing: border-box; /*doesn't expand dimensions of div when padding is applied. It leaves original dimensions.*/
     padding: 5px;
     float: right;
-    display: block;
+    display: inline-block;
     font-family: 'Eczar', serif;
    /* margin-right: 25px;*/
     }
@@ -68,35 +68,6 @@
    }
 }
 
-/*Footer*/
-@media (max-width: 539px) {
-   .socialMedia {
-      font-size: 12px;
-      
-   }
-}
-
-@media (max-width: 539px) {
-   .fa.fa-twitter,
-   .fa.fa-facebook,
-   .fa.fa-yelp {
-    font-size: 12px;    
-   }
-}
-
-@media (max-width: 347px) {
-   .socialMedia {
-      font-size: 10px;  
-   }
-}
-
-@media (max-width: 347px) {
-   .fa.fa-twitter,
-   .fa.fa-facebook,
-   .fa.fa-yelp {
-    font-size: 10px;    
-   }
-}
 
 /*Home Grid*/
 @media (max-width: 323px) {
@@ -112,5 +83,4 @@
     width: 48%;
   }
 }
-
 

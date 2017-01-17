@@ -15,14 +15,11 @@
 </head>
 
 <body style="min-height:100%">
-
-<img src="http://amourasf.com/images/leafpatterndesktop.png?crc=398212418" class="leaf"> 
-
-<header>
+ 
+<header class="navbar-margin">
   <nav class="nav-main">
     <div class="logo-img-handle"><span class="logo-img"> <img src="img/cover.png" class="logo-responsive"> </span> </div>
     <div class="logo-handle"><span class="logo-text"> AJ's BBQ and Cafe </span> </div>
-    <!-- <div class="menu-handle"><span class="menu-text"> Menu </span> </div> -->
     <div class="menu-handle">
       <span class="menu-text"><button id="cpBtn">
         <div></div>
@@ -39,6 +36,7 @@
       <a href="#/contact"><li>Contact</li></a>
     </ul>
   </nav>
+</header>
 </header>
   
 <div class="container-fluid">
@@ -112,6 +110,13 @@
 
 
     <script src="js/script.js"></script>
+
+    <!-- Toggles hamburger icon -->
+    <script>
+      $('.menu-handle').on('click', function(){
+        $('nav ul').toggleClass('showing');
+    });
+    </script>
 
 </body>
 <?php 

@@ -20,6 +20,10 @@ html {
 
 /*Hamburger menu*/
 
+.navbar-margin {
+  margin-top: 20px;
+}
+
 #cpBtn{
   margin-top: 27px;
   float: right;
@@ -67,7 +71,7 @@ html {
   float: left;
   padding: 5px;
   box-sizing: border-box;
-  line-height: 90px;
+  line-height: 80px;
   font-weight: bold;
   font-family: 'Eczar', serif;
   font-size: 100%;
@@ -89,7 +93,7 @@ html {
   font-weight: bold;
   font-family: 'Eczar', serif;
   font-size: 150%;
-  line-height: 45px;
+  line-height: 40px;
 }
 
 .logo-responsive{
