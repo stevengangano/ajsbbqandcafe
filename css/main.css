@@ -27,7 +27,7 @@ html {
 #cpBtn{
   margin-top: 27px;
   float: right;
-  padding: 2px 5px;
+  padding: 2px 8px;
   background-color: white;
   border: 1px solid black;
   border-radius: 5px;
@@ -60,6 +60,8 @@ html {
 }
 
 .logo-handle {
+  position: relative;
+  right: 13px;
   width: 100%;
   display: none;
 }
@@ -71,13 +73,15 @@ html {
   float: left;
   padding: 5px;
   box-sizing: border-box;
-  line-height: 80px;
+  line-height: 85px;
   font-weight: bold;
   font-family: 'Eczar', serif;
-  font-size: 100%;
+  font-size: 125%;
 }
 
 .logo-img-handle {
+  position: relative;
+  right: 17px;
   width: 100%;
   display: none;
 }
@@ -93,11 +97,11 @@ html {
   font-weight: bold;
   font-family: 'Eczar', serif;
   font-size: 150%;
-  line-height: 40px;
+  line-height: 50px;
 }
 
 .logo-responsive{
-  height: 75px;
+  height: 80px;
 }
 
 .nav-main{
