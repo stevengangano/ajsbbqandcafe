@@ -67,11 +67,10 @@
 }
 
 /*Sidebar*/
-@media (max-width: 1440px) {
+@media (min-width: 950px) {
   .side-bar {
-    position: relative;
-    left: 30px;
-  }
+     position: relative;
+     left: 15px;  }
 }
 
 @media (max-width: 995px) {
