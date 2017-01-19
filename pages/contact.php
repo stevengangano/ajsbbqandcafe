@@ -28,15 +28,14 @@
       </button></span>
     </div>
     <ul>
-      <a href="#/home"><img src="img/cover.png" class="logo-responsive logo"></a>
-      <a href="#/home" class="logo"><li>AJ's BBQ and Cafe</li></a>
+      <img src="img/cover.png" class="logo-responsive logo">
+      <li class="logo">AJ's BBQ and Cafe</li>
       <a href="#/home"><li>Home</li></a>
       <a href="#/menu"><li>Menu</li></a>
       <a href="#/about"><li>About</li></a>
       <a href="#/contact"><li>Contact</li></a>
     </ul>
   </nav>
-</header>
 </header>
   
 <div class="container-fluid">

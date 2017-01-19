@@ -2,8 +2,7 @@
 
     .logo{
       display: none;
-    }
-    
+    }  
     nav ul {
     max-height: 0px; /*this hides nav list*/
     margin-bottom: 20px;
@@ -67,6 +66,21 @@
    }
 }
 
+/*Sidebar*/
+@media (max-width: 1440px) {
+  .side-bar {
+    position: relative;
+    left: 30px;
+  }
+}
+
+@media (max-width: 995px) {
+  .side-bar {
+    position: relative;
+    top: 25px;
+  }
+}
+
 
 /*Home Grid*/
 @media (max-width: 323px) {
@@ -82,4 +96,7 @@
     width: 48%;
   }
 }
+
+
+
 
