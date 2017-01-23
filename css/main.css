@@ -260,6 +260,11 @@ a{
    margin: 0px !important;
 }
 
+.slogan {
+  font-size: 150%;
+  font-family: 'Alegreya', serif;
+
+}
 .address-phone {
   font-size: 115%;
 }

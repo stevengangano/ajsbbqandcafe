@@ -58,7 +58,7 @@
         <br>
         <br>
          
-         <span class="contact-desc"> For private event inquiries, please contact </span> <span class="phone-email">ajsbbqandcafe@gmail.com.com</span>
+         <span class="contact-desc"> For private event inquiries, please contact </span> <span class="phone-email">ajsbbqandcafe@gmail.com</span>
 
         <br>
         <br>
@@ -69,7 +69,7 @@
         <br>
          
         Kevin Guevarra | 650-644-4451 </span>
-        <span class="phone-email">ajsbbqandcafe@gmail.com.com</span>  
+        <span class="phone-email">ajsbbqandcafe@gmail.com</span>  
 
         <br>
         <br>
