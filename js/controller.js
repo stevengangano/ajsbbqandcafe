@@ -30,6 +30,7 @@ myApp.config(function ($routeProvider) {
 	.when ('/menu', {
 		templateUrl: 'pages/menu.html'
 	})
+
 	.when ('/maps', {
 		templateUrl: 'pages/maps.html'
 	})
