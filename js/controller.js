@@ -7,6 +7,7 @@ myApp.config(function ($routeProvider) {
 	.when ('/', {
 		templateUrl: 'pages/home.html'	
 	})
+
 	.when ('/about', {
 		templateUrl: 'pages/about.html'
 	})
@@ -16,7 +17,7 @@ myApp.config(function ($routeProvider) {
 	})
 
 	.when ('/contact', {
-		templateUrl: 'pages/contact.php'
+		templateUrl: 'pages/contact.html'
 	})
 
 	.when ('/email', {
@@ -29,10 +30,6 @@ myApp.config(function ($routeProvider) {
 
 	.when ('/menu', {
 		templateUrl: 'pages/menu.html'
-	})
-
-	.when ('/maps', {
-		templateUrl: 'pages/maps.html'
 	})
 })
 

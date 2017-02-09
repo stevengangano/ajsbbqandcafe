@@ -346,13 +346,13 @@ a{
 .meals-showcase li {
   display: block; /*makes each image on their own line*/
   float: left; /*floating makes images sit next to each other instead of stacked*/
-  width: 25%; /*makes each image 25% of width of â€œ.meals-showcaseâ€*/
+  width: 25%; /*makes each image 25% of width of Ã¢â‚¬Å“.meals-showcaseÃ¢â‚¬Â*/
   padding: 2px;
 }
 
 .meal-photo {
   border: 1px solid gold;
-  width: 100%; /*has the same width as its container â€œ.meals-showcase liâ€*/
+  width: 100%; /*has the same width as its container Ã¢â‚¬Å“.meals-showcase liÃ¢â‚¬Â*/
   margin: 0;
   overflow: hidden; /*hides anything that comes out of its container*/
   background-color: black; /*makes background darker*/
@@ -360,7 +360,7 @@ a{
 
 .meal-photo img {
   opacity: 0.7;
-  width: 100%; /*has the same width as its container â€œ.meal-photoâ€*/
+  width: 100%; /*has the same width as its container Ã¢â‚¬Å“.meal-photoÃ¢â‚¬Â*/
   height: auto;
   -webkit-transform: scale(1.15);
           transform: scale(1.15); /*will be 115% big*/
@@ -443,17 +443,17 @@ h3 {
 .meal-showcase li {
   display: block;/* makes each image on their own line*/
   float: left; /*floating makes images sit next to each other*/
-  width: 25%; /*makes each image 25% of width of â€œ.meals-showcaseâ€*/
+  width: 25%; /*makes each image 25% of width of Ã¢â‚¬Å“.meals-showcaseÃ¢â‚¬Â*/
 }
 
 .meal-photo {
   border: 5px solid white;
-  width: 100%; /*has the same width as its container â€œ.meals-showcase liâ€*/
+  width: 100%; /*has the same width as its container Ã¢â‚¬Å“.meals-showcase liÃ¢â‚¬Â*/
   margin: 0;
 }
 
 .meal-photo img {
-  width: 100%; /*has the same width as its container â€œ.meal-photoâ€*/
+  width: 100%; /*has the same width as its container Ã¢â‚¬Å“.meal-photoÃ¢â‚¬Â*/
   height: auto;
 }
 
