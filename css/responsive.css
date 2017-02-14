@@ -39,8 +39,6 @@
     } 
 }
 
-
-/*Navbar*/
 @media (max-width: 320px) {
    .navbar-brand.title {
       position: relative;
@@ -66,7 +64,7 @@
    }
 }
 
-/*Sidebar*/
+/*Home - Sidebar*/
 @media (min-width: 950px) {
   .side-bar {
      position: relative;
@@ -81,7 +79,7 @@
 }
 
 
-/*Home Grid*/
+/*Home - Grid*/
 @media (max-width: 323px) {
   .brown-square,
   .red-square {
@@ -95,7 +93,3 @@
     width: 48%;
   }
 }
-
-
-
-
