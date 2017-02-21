@@ -2,24 +2,21 @@
 
     .logo{
       display: none;
-    }  
+    } 
+
     nav ul {
     max-height: 0px; /*this hides nav list*/
-    margin-bottom: 20px;
+
     }
 
     .showing{
-    max-height: 50em; 
+    max-height: 50em; /*toggles hamburger dropdown*/
     }
 
     nav ul li {
-    width: 100%;
+    width: 100%; /*makes each <li> on take up a whole line*/
     box-sizing: border-box; /*doesn't expand dimensions of div when padding is applied. It leaves original dimensions.*/
-    padding: 5px;
-    float: right;
-    display: inline-block;
-    font-family: 'Eczar', serif;
-   /* margin-right: 25px;*/
+    padding: 2px;
     }
 
     nav ul li:hover{
