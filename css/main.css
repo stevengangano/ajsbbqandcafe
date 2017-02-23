@@ -309,6 +309,8 @@ nav ul li.current {
     #photos {   
     line-height: 0;           
     column-count: 2;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
     column-gap: 0px;
   }
 }
@@ -427,40 +429,52 @@ ul.shortcut-menu {
 
 ul.shortcut-menu li {
   display: inline-block;
-  margin: 20px;
   font-size: 20px;
+  margin: 35px;
 }
 
 ul.shortcut-menu li:visited {
   color: blue;
 }
 
-@media (max-width: 1199px){
+
+@media (max-width: 1200px){
   ul.shortcut-menu li {
-    font-size: 18px; 
+    font-size: 15px;
+    margin: 35px;
+
   } 
 }
 
 @media (max-width: 991px){
   ul.shortcut-menu li {
-    font-size: 8px;
-
+    font-size: 12px;
+    margin: 20px;  
   } 
 }
 
-@media (max-width: 620px){
+@media (max-width: 720px){
   ul.shortcut-menu li {
-    font-size: 6px;
-    margin: 1px;  
+    font-size: 10px;
+    margin: 4px;  
   } 
 }
 
-@media (max-width: 364px){
-  ul.shortcut-menu li {
-    font-size: 4px;
-    margin: 1px;  
+@media (max-width: 495px){
+  ul.shortcut-menu  {
+    position: relative;
+    right: 20px;
   } 
 }
+
+@media (max-width: 495px){
+  ul.shortcut-menu li  {
+    font-size: 5px; 
+    margin: 2px;
+  } 
+}
+
+
 .menu-headers{
   font-family: 'Eczar', serif;
   color: #4C130C;
