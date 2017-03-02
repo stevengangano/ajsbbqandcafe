@@ -187,7 +187,7 @@ nav ul li.current {
 
 @media(max-width: 370px) {
   .events-news{
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 
@@ -399,7 +399,6 @@ nav ul li.current {
 
 
 /*Section Features*/
-
 h3 {
   font-size: 100%;
   word-spacing: 2px; /*space between each word*/
@@ -428,15 +427,14 @@ ul.shortcut-menu {
 }
 
 ul.shortcut-menu li {
-  display: inline-block;
-  font-size: 20px;
   margin: 35px;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+  font-family: 'Alegreya', serif;
+  display: inline-block;
+  text-decoration: underline;
 }
-
-ul.shortcut-menu li:visited {
-  color: blue;
-}
-
 
 @media (max-width: 1200px){
   ul.shortcut-menu li {
@@ -453,10 +451,24 @@ ul.shortcut-menu li:visited {
   } 
 }
 
-@media (max-width: 720px){
+@media (max-width: 991px){
   ul.shortcut-menu li {
     font-size: 10px;
-    margin: 4px;  
+    margin: 20px;  
+  } 
+}
+
+@media (max-width: 587px){
+  ul.shortcut-menu li {
+    font-size: 9px;
+    margin: 15px;  
+  } 
+}
+
+@media (max-width: 487px){
+  ul.shortcut-menu li {
+    font-size: 9px;
+    margin: 3px;  
   } 
 }
 
@@ -467,13 +479,12 @@ ul.shortcut-menu li:visited {
   } 
 }
 
-@media (max-width: 495px){
+@media (max-width: 380px){
   ul.shortcut-menu li  {
-    font-size: 5px; 
+    font-size: 7px; 
     margin: 2px;
   } 
 }
-
 
 .menu-headers{
   font-family: 'Eczar', serif;
@@ -491,13 +502,10 @@ ul.shortcut-menu li:visited {
 }
 
 .item-extra,
-.item-description{
+.item-description,
+.item-price {
   font-family: 'Alegreya', serif;
   font-weight: bold;
-}
-
-.flavor{
-  font-family: 'Eczar', serif;
 }
 
 .catering{
@@ -536,11 +544,12 @@ ul.shortcut-menu li:visited {
 }
 
 .about-desc{
+  letter-spacing: 1px;
   font-family: 'Alegreya', serif;
   font-weight: bold;
 }
 
-.about {
+.image-border {
   border: 2px solid black;
 }
 
@@ -552,6 +561,7 @@ ul.shortcut-menu li:visited {
 .about-photo{
   border: 5px solid white;
 }
+
 .contact-header{
   font-family: 'Alegreya', serif;
 }
@@ -560,9 +570,20 @@ ul.shortcut-menu li:visited {
 .contact-desc {
   font-family: 'Alegreya', serif;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .phone-email {
   text-decoration: underline;
   color: #D29727;  
+}
+
+@media (max-width: 992px) {
+  .image-border {
+    margin-bottom: 20px;
+  }
+}
+
+.margin {
+  margin-bottom: 20px;
 }
