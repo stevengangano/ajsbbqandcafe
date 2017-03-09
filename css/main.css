@@ -218,11 +218,9 @@ nav ul li.current {
 }
 
 .address-phone,
-.time,
-.yelp-txt,
-.fb-txt {
+.time {
   font-family: 'Alegreya', serif;
-  color: #D29727;
+  color: black;
 }
 
 .address-call-hours-connect {
@@ -248,41 +246,24 @@ nav ul li.current {
   padding: 8px;
   text-align: center;
   text-decoration: none;
+  padding: 18px 32px; 
+  background: #2445A6; 
+  border-radius: 5px; 
+  position: relative; 
+  top: 25px; 
+  left: 3px;"
 }
 
 /*Social Media Icons*/
 
-.fa {
- margin: 0px 5px;
- padding: 5px;
- border-radius: 25%;
-}
 
-.fa.fa-facebook {
+.fb-txt {
    color: white;
-   background-color: #2445A6;
-   padding: 5px;
-   font-size: 12px;
+   font-weight: bold;
+   font-family: 'Roboto', sans-serif;
+
 }
 
-.facebook {
-   color: #2445A6;
-}
-
-.fa.fa-yelp {
-   color: white;
-   background-color: #D32323;
-   font-size: 12px;
-}
-
-.yelp {
-  color: #D32323;
-}
-
-.socialMedia {
-   font-family: 'Open Sans', sans-serif;
-   font-size: 20px;
-}
 
 /*Gallery*/
 
@@ -436,8 +417,8 @@ ul.shortcut-menu li {
   text-decoration: underline;
 }
 
-@media (max-width: 1200px){
-  ul.shortcut-menu li {
+/*@media (max-width: 1200px){
+  p.menu-shortcut {
     font-size: 15px;
     margin: 35px;
 
@@ -445,7 +426,7 @@ ul.shortcut-menu li {
 }
 
 @media (max-width: 991px){
-  ul.shortcut-menu li {
+  p.menu-shortcut  {
     font-size: 12px;
     margin: 20px;  
   } 
@@ -455,7 +436,7 @@ ul.shortcut-menu li {
   ul.shortcut-menu li {
     font-size: 10px;
     margin: 20px;  
-  } 
+  } */
 }
 
 @media (max-width: 587px){
@@ -465,77 +446,48 @@ ul.shortcut-menu li {
   } 
 }
 
-@media (max-width: 487px){
-  ul.shortcut-menu li {
-    font-size: 9px;
-    margin: 3px;  
-  } 
-}
-
-@media (max-width: 495px){
-  ul.shortcut-menu  {
-    position: relative;
-    right: 20px;
+@media (max-width: 513px){
+  p.menu-shortcut {
+    font-size: 7px;
+    margin: 0px;  
   } 
 }
 
 @media (max-width: 380px){
-  ul.shortcut-menu li  {
+  p.menu-shortcut   {
     font-size: 7px; 
     margin: 2px;
+    margin-bottom: 10px 0px;
   } 
+}
+
+.menu-shortcut {
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  background-color: #F6EA42;
+  text-decoration: none;
 }
 
 .menu-headers{
   font-family: 'Eczar', serif;
+  text-align:left;
   color: #4C130C;
-  text-decoration: underline;
   letter-spacing: 1px;
 }
 
-.menu-headers:hover{
-  color: #D29727;
-}
-
-.menu-item{
+.menu-item,
+.item-price {
   font-family: 'Eczar', serif;
 }
 
-.item-extra,
-.item-description,
+.menu-item {
+  float: left;
+}
+
 .item-price {
-  font-family: 'Alegreya', serif;
-  font-weight: bold;
-}
-
-.catering{
-  color: black;
-}
-
-.section-meals{
-  position: relative;
-  right: 18px;
-}
-.meal-showcase {
-  list-style: none; /*removes unordered list dots*/
-  width: 100%; /*so it takes up the whole browser width*/
-}
-
-.meal-showcase li {
-  display: block;/* makes each image on their own line*/
-  float: left; /*floating makes images sit next to each other*/
-  width: 25%; /*makes each image 25% of width of Ã¢â‚¬Å“.meals-showcaseÃ¢â‚¬Â*/
-}
-
-.meal-photo {
-  border: 5px solid white;
-  width: 100%; /*has the same width as its container Ã¢â‚¬Å“.meals-showcase liÃ¢â‚¬Â*/
-  margin: 0;
-}
-
-.meal-photo img {
-  width: 100%; /*has the same width as its container Ã¢â‚¬Å“.meal-photoÃ¢â‚¬Â*/
-  height: auto;
+  float: right;
 }
 
 /*About Page*/
