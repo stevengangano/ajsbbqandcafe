@@ -1,12 +1,10 @@
 @media (max-width: 775px) {
-
     .logo{
       display: none;
     } 
 
     nav ul {
     max-height: 0px; /*this hides nav list*/
-
     }
 
     .showing{
@@ -74,7 +72,6 @@
     top: 25px;
   }
 }
-
 
 /*Home - Grid*/
 @media (max-width: 323px) {
