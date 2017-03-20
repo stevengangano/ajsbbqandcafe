@@ -5,11 +5,10 @@
   <title> AJ's BBQ and Cafe </title>
 
   <!-- INCLUDE META TAGS HERE FOR SEO -->
-  <metaname="description" content="AJ's BBQ and Cafe is home of the authentic Filipino Food">
+  <meta name="description" content="AJ's BBQ and Cafe's authentic Filipino Food">
+  <meta name="keywords" content="barbecue, filipino food, San Francisco">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <!--  Include Google Analytics -->
-
 
   <link href="css/main.css" rel="stylesheet"/>
   <link href="css/responsive.css" rel="stylesheet"/>
@@ -49,13 +48,22 @@
 
 <body class='background two'> 
 
-<div ng-view>
-  
-</div>
+<div ng-view></div>
 
-
+<!-- Google Analytics -->
 <script>
-  var myApp=angular.module('myApp',['ngRoute'])
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93587403-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Angular Routing -->
+<script>
+var myApp=angular.module('myApp',['ngRoute'])
 
 myApp.config(function ($routeProvider) {
 
@@ -64,33 +72,24 @@ myApp.config(function ($routeProvider) {
   .when ('/', {
     templateUrl: 'pages/home.html'  
   })
-
+  .when ('/home', {
+    templateUrl: 'pages/home.html'
+  })
+    .when ('/menu', {
+    templateUrl: 'pages/menu.html'
+  })
   .when ('/about', {
     templateUrl: 'pages/about.html'
-  })
-
-  .when ('/catering', {
-    templateUrl: 'pages/catering.html'
-  })
-
+  }) 
   .when ('/contact', {
     templateUrl: 'pages/contact.html'
   })
 
-  .when ('/home', {
-    templateUrl: 'pages/home.html'
-  })
-
-  .when ('/menu', {
-    templateUrl: 'pages/menu.html'
-  })
 })
-
 </script>
 <!-- LightBox -->
 <script type="text/javascript" src="js/lightbox.min.js"></script> 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
-
 </html>
