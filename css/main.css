@@ -218,6 +218,7 @@ nav ul li.current {
 
 .slogan {
   font-size: 150%;
+  font-weight: bold;
   font-family: 'Alegreya', serif;
 
 }
@@ -455,4 +456,13 @@ h3 {
 
 .margin {
   margin-bottom: 35px;
+}
+
+/*Carousel Override*/
+#bootstrap-overrides.carousel-indicators .active {
+  background-color: #4C130C;
+}
+
+#bootstrap-overrides.carousel-indicators li{
+  border: 1px solid black;
 }
