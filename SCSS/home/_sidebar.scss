@@ -1,0 +1,51 @@
+.no-dec {
+  font-size: 90%;
+  text-decoration: none;
+  color: black;
+}
+
+.nopadding {
+   padding: 0px !important;
+   margin: 0px !important;
+}
+
+.slogan {
+  font-size: 150%;
+  font-weight: bold;
+  font-family: 'Alegreya', serif;
+
+}
+.address-phone {
+  font-size: 115%;
+}
+
+.address-phone,
+.time {
+  font-family: 'Alegreya', serif;
+  color: black;
+}
+
+.address-call-hours-connect {
+  font-size: 120%;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #4C130C;
+}
+
+.hours-day {
+  font-weight: bold;
+}
+
+/*Responsive sidebar*/
+@media (min-width: 950px) {
+  .side-bar {
+     position: relative;
+     left: 15px;  }
+}
+
+@media (max-width: 995px) {
+  .side-bar {
+    position: relative;
+    top: 25px;
+  }
+}

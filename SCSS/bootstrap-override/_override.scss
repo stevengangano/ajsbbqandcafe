@@ -1,0 +1,9 @@
+/*overrides carousel indicator colors*/
+
+#bootstrap-overrides.carousel-indicators .active {
+  background-color: #4C130C;
+}
+
+#bootstrap-overrides.carousel-indicators li{
+  border: 1px solid black;
+}

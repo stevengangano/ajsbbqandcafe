@@ -1,0 +1,29 @@
+/* Menu */
+.menu-shortcut {
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  background-color: #F6EA42;
+  text-decoration: none;
+}
+
+.menu-headers{
+  font-family: 'Eczar', serif;
+  text-align:left;
+  color: #4C130C;
+  letter-spacing: 1px;
+}
+
+.menu-item,
+.item-price {
+  font-family: 'Eczar', serif;
+}
+
+.menu-item {
+  float: left;
+}
+
+.item-price {
+  float: right;
+}

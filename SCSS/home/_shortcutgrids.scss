@@ -1,0 +1,75 @@
+.grid-box {
+  margin: 45px 0;
+}
+
+.grid {
+  margin: 5px;
+}
+
+.brown-square {
+  background-color: #422C1C;
+}
+
+.red-square {
+  background-color: #9E3126;
+}
+
+.brown-square,
+.red-square {
+  width: 30%;
+  height: 100px;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.brown-square:hover,
+.red-square:hover {
+  opacity: 0.5;
+}
+
+.top-box {
+  margin-bottom: 5px;
+}
+
+.nav-text {
+  line-height: 100px; /*same height as div so it is vertically aligned*/
+  color: white;
+  font-weight: bold;
+}
+
+/*Responsive Grid*/
+
+@media (max-width: 323px) {
+  .brown-square,
+  .red-square {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 318px) {
+  .brown-square,
+  .red-square {
+    width: 48%;
+  }
+}
+
+@media(max-width: 575px) {
+  .events-news {
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 440px) {
+  .catering-menu {
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 370px) {
+  .events-news,
+  .catering-menu,
+  .contact-us {
+    font-size: 9px;
+  }
+}
