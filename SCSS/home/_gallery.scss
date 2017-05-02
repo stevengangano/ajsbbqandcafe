@@ -1,4 +1,4 @@
-#photos{   
+#photos {   
   -webkit-column-count: 4; /* Chrome, Safari, Opera */
   -moz-column-count: 4; /* Firefox */
   line-height: 0;           
@@ -6,14 +6,13 @@
   -webkit-column-gap: 0px;
      -moz-column-gap: 0px;
           column-gap: 0px;
-}
- 
-#photos > img {
+  img {
   width: 100%;
   height: auto;
   margin: 5px;
+  }
 }
-
+ 
 .gallery-hr{
   border-top: 5px solid white;
   margin-top: 30px;

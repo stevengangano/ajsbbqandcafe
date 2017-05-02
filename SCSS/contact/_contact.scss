@@ -1,0 +1,27 @@
+.contact-header{
+  font-family: 'Alegreya', serif;
+}
+
+.phone-email {
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  color: #D29727;  
+}
+
+.contact-desc {
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 992px) {
+  .image-border {
+    margin-bottom: 20px;
+  }
+}
+
+.margin {
+  margin-bottom: 35px;
+}

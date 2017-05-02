@@ -1,25 +1,22 @@
-/*Navbar*/
-
 /*Hamburger menu*/
 .navbar-margin {
   margin-top: 20px;
 }
 
-#cpBtn{
+#cpBtn {
   margin-top: 27px;
   float: right;
   padding: 2px 8px;
   background-color: white;
   border: 1px solid black;
   border-radius: 5px;
-}
-
-#cpBtn > div {
-  width: 20px;
-  height: 4px;
-  background: black;
-  margin: 3px 0px;
-  border-radius: 2px;
+  div {
+    width: 20px;
+    height: 4px;
+    background: black;
+    margin: 3px 0px;
+    border-radius: 2px;
+  }
 }
 /*hamburger menu end*/
 
@@ -83,37 +80,40 @@
   height: 80px;
 }
 
-nav ul {
-  width: 100%;
-  overflow:hidden;
-  padding: 0;
-  text-align: right; /*centers the list items*/
-  -webkit-transition: max-height 0.4s;
-  transition: max-height 0.4s;
-  line-height: 45px;
-  font-family: 'Eczar', serif;
+nav {
+
+  ul {
+    width: 100%;
+    overflow:hidden;
+    padding: 0;
+    text-align: right; /*centers the list items*/
+    -webkit-transition: max-height 0.4s;
+    transition: max-height 0.4s;
+    line-height: 45px;
+    font-family: 'Eczar', serif;
+  }
+
+  li {
+    display: inline-block; /*takes off bullet points and inlines*/
+    padding: 15px;
+    font-weight: 500;
+    color: #4C130C;
+    letter-spacing: 2px;  
+  }
+
+  ul li:hover {
+    color: #D29727;
+  }
+
+  ul li.current {
+    color: #D29727;
+  }
+
 }
 
-
-nav ul li {
-  display: inline-block; /*takes off bullet points and inlines*/
-  padding: 15px;
-  font-weight: 500;
-  color: #4C130C;
-  letter-spacing: 2px;
-}
-
-nav ul li:hover {
-  color: #D29727;
-}
-
-a{
+a {
   text-decoration: none;
   color: inherit; /*when hovered it takes color around it*/
-}
-
-nav ul li.current {
-  color: #D29727;
 }
 /*nav end*/
 

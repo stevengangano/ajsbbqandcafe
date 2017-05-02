@@ -9,23 +9,20 @@
 .brown-square {
   background-color: #422C1C;
 }
-
 .red-square {
   background-color: #9E3126;
 }
 
 .brown-square,
-.red-square {
+.red-square, {
   width: 30%;
   height: 100px;
   display: inline-block;
   border: 2px solid black;
   border-radius: 5px;
-}
-
-.brown-square:hover,
-.red-square:hover {
-  opacity: 0.5;
+  &:hover {
+     opacity: 0.5;
+  }
 }
 
 .top-box {
