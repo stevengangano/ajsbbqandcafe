@@ -42,7 +42,7 @@
 }
 
 .logo-text {
-  color:#4C130C;
+  color:$maroon;
   font-size: 15px;
   font-weight: bold;
   float: left;
@@ -97,16 +97,16 @@ nav {
     display: inline-block; /*takes off bullet points and inlines*/
     padding: 15px;
     font-weight: 500;
-    color: #4C130C;
+    color: $maroon;
     letter-spacing: 2px;  
   }
 
   ul li:hover {
-    color: #D29727;
+    color: $yellow;
   }
 
   ul li.current {
-    color: #D29727;
+    color: $yellow;
   }
 
 }
