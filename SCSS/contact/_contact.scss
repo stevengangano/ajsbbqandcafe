@@ -1,8 +1,24 @@
 /*Colors*/
 $Gold: #D29727;;
 
-.contact-header{
+.contact-header,
+.contact-title {
   font-family: $Alegreya-font;
+}
+
+.contact-title {
+  font-size: 200%;
+}
+
+.name,
+.email,
+.message {
+  color: black;
+  margin: 3% 0 0 3%;
+}
+
+bootstrap-override-button btn btn-default {
+  color: #4C130C;
 }
 
 .phone-email {

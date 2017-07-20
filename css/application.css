@@ -166,6 +166,10 @@ a {
   font-weight: bold;
   font-family: 'Alegreya', serif; }
 
+.grub_hub {
+  cursor: pointer;
+  margin-top: 3px; }
+
 .address-phone {
   font-size: 115%; }
 
@@ -354,8 +358,21 @@ h3 {
 
 /*Font*/
 /*Colors*/
-.contact-header {
+.contact-header,
+.contact-title {
   font-family: "Alegreya", serif; }
+
+.contact-title {
+  font-size: 200%; }
+
+.name,
+.email,
+.message {
+  color: black;
+  margin: 3% 0 0 3%; }
+
+bootstrap-override-button btn btn-default {
+  color: #4C130C; }
 
 .phone-email {
   font-family: "Alegreya", serif;
